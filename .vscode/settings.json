@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "stm32f1xx_hal.h": "c",
+        "led.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "stm32f1xx_hal_rcc.h": "c",
+        "stm32f1xx_hal_def.h": "c",
+        "stm32_hal_legacy.h": "c",
+        "stddef.h": "c",
+        "stm32f1xx.h": "c",
+        "stm32f103xb.h": "c",
+        "delay.h": "c",
+        "stm32h7xx_hal_opamp.h": "c",
+        "stm32h7xx_hal_def.h": "c",
+        "stm32h7xx_hal.h": "c",
+        "stdio.h": "c",
+        "usart.h": "c",
+        "sys.h": "c",
+        "core_cm7.h": "c",
+        "uart.h": "c",
+        "task.h": "c",
+        "stdint.h": "c",
+        "_stdint.h": "c",
+        "_default_types.h": "c",
+        "cstdint": "cpp"
+    },
+    "C_Cpp.default.compilerPath": "C:/Users/winter/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+    "cortex-debug.variableUseNaturalFormat": false
+}

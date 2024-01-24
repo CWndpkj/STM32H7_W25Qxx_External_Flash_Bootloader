@@ -1,0 +1,2 @@
+CompileFlags:
+    Add: ["-isystemC:/Users/winter/.eide/tools/gcc_arm/arm-none-eabi/include"]

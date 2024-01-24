@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/project.elf",
+            "loadFiles": [
+                "build/project.elf",
+            ],
+            "symbolFiles": [
+                {
+                    "file": "build/project.elf",
+                },
+            ],
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "showDevDebugOutput": "parsed",
+            "configFiles": [
+                "board/stm32h750b-disco.cfg",
+            ],
+            "svdFile": ".pack/Keil/STM32H7xx_DFP.3.1.1/CMSIS/SVD/STM32H750.svd",
+            "device": "cmsis-dap",
+        },
+    ]
+}

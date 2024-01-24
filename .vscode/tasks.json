@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Reload Cmake Project",
+            "type": "shell",
+            "command": "clear ; Remove-Item -Recurse ./build ; mkdir ./build ; cd ./build ; cmake -G \"Ninja\" -DOPEN_LOG_OMN_DEBUG=ON -DCMAKE_BUILD_TYPE=Debug ..",
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build (Debug)",
+            "type": "shell",
+            "command": "clear ; cd ./build ; cmake -G \"Ninja\" -DOPEN_LOG_OMN_DEBUG=ON .. ; ninja -j8",
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Program",
+            "type": "shell",
+            "command": "openocd -f board/stm32h750b-disco.cfg -c 'program build/project.hex verify reset exit'",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false
+            }
+        }
+    ]
+}
